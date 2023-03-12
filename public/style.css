@@ -1,0 +1,1105 @@
+* {
+  box-sizing: border-box;
+  font-family: "Barlow Condensed", sans-serif;
+  color: var(--primary-color);
+}
+
+html,
+body,
+section {
+  block-size: 100%;
+  background: #42342e;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+:root {
+  --dark-color: #20120f;
+  --primary-color: #c18661;
+  --secendary-color: #e6d4cd;
+}
+
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  box-sizing: border-box;
+
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* section {
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  } */
+
+div {
+  /* border: 2px solid var(--dark-color); */
+  width: 100%;
+}
+
+#profileDiv {
+  height: 65%;
+  display: flex;
+  padding: 2em;
+  justify-content: space-between;
+  align-items: center;
+}
+#nameDiv {
+  width: 70%;
+  height: 100%;
+  text-align: center;
+  /* font-size: 3.5em; */
+  padding: 1.5em;
+}
+#nameDiv h1 {
+  margin: 0.2em;
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+#imgDiv {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#imgBg {
+  background: var(--dark-color);
+  width: 18em;
+  height: 18em;
+  border-radius: 100%;
+  position: relative;
+}
+#imgBg img {
+  position: absolute;
+  top: -17px;
+  right: -15px;
+}
+#skillDiv {
+  height: 25%;
+  text-align: center;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#titles {
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+}
+#titles ul {
+  height: 100%;
+  text-transform: uppercase;
+  animation: flipForTitles 5s ease-in-out infinite;
+}
+#titles ul li {
+  list-style: none;
+  box-sizing: border-box;
+  padding: 0.3em;
+  height: 100%;
+  font-size: 2.3em;
+}
+@-webkit-keyframes flipForTitles {
+  0%,
+  50% {
+    transform: translate(0px, -4.9em);
+  }
+  50%,
+  100% {
+    transform: translate(0px, -1.375em);
+  }
+  100%,
+  0% {
+    transform: translate(0px, -4.9em);
+  }
+}
+/* second section */
+
+#second {
+  padding: 1em;
+  justify-content: center;
+  align-items: center;
+}
+#projectDiv {
+    height: 75%;
+    box-sizing: border-box;
+    padding: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#projectCard {
+    border: 2px solid var(--dark-color);
+    border-radius: 1em;
+    background: var(--secendary-color);
+    color: black;
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.2em;
+}
+#projectCard div {
+  width: 100%;
+}
+#headingDiv {
+  height: 35%;
+  font-size: 1.2em;
+}
+#headingDiv h2 {
+  letter-spacing: 5px;
+  font-size: 2.5em;
+  margin: 0.2em;
+  text-align: center;
+}
+#toolsDiv {
+  height: 35%;
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#tools {
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+}
+#tools ul {
+  height: 100%;
+  text-transform: uppercase;
+  animation: flipForSkills 5s ease-in-out infinite;
+}
+#tools ul li {
+  list-style: none;
+  box-sizing: border-box;
+  padding: 0.1em;
+  font-size: 2.5em;
+}
+@-webkit-keyframes flipForSkills {
+  0%,
+  20% {
+    transform: translate(0px, -14.9em);
+  }
+  20%,
+  40% {
+    transform: translate(0px, -10.55em);
+  }
+  40%,
+  60% {
+    -webkit-transform: translate(0px, -7.54em);
+  }
+  60%,
+  80% {
+    transform: translate(0px, -3.64em);
+  }
+  80%,
+  100% {
+    transform: translate(0px, -0.315em);
+  }
+  100%,
+  0% {
+    transform: translate(0px, -14.9em);
+  }
+}
+
+#linksDiv {
+  height: 25%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#linksDiv a {
+  text-decoration: none;
+  width: 10%;
+  height: 40%;
+}
+#linksDiv img {
+  width: 100%;
+  height: 100%;
+}
+#linksDiv img:hover {
+  cursor: pointer;
+}
+#descriptionDiv {
+  height: 100%;
+  width: 65%;
+  padding: 1.5em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#descriptionDiv p {
+  font-size: 2em;
+  text-align: justify;
+}
+
+/* Third Section */
+#third {
+  padding: 1em;
+  flex-direction: row;
+}
+#messageDiv {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 2px;
+  height: 100%;
+  width: 65%;
+  justify-content: center;
+}
+#messageDiv h1 {
+  font-size: 4em;
+  margin: 0.1em;
+}
+#passions {
+  width: 100%;
+  height: 10%;
+  overflow: hidden;
+}
+#passions ul {
+  height: 100%;
+  animation: flipForPassions 5s ease-in-out infinite;
+}
+#passions ul li {
+  list-style: none;
+  box-sizing: border-box;
+  padding: 0.1em;
+  font-size: 3.3em;
+  height: 100%;
+}
+@-webkit-keyframes flipForPassions {
+  0%,
+  35% {
+    transform: translate(0px, -8.9em);
+  }
+  35%,
+  70% {
+    transform: translate(0px, -5.375em);
+  }
+  70%,
+  100% {
+    -webkit-transform: translate(0px, -1.44em);
+  }
+  100%,
+  0% {
+    transform: translate(0px, -8.9em);
+  }
+}
+#contactDiv {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  text-align: center;
+}
+#contactCard {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 30%;
+}
+#contactCard img {
+  width: 2em;
+  height: 2em;
+}
+#contactCard img:hover {
+  cursor: pointer;
+}
+
+
+
+
+
+/* -------------
+-
+-
+-
+-
+-
+-
+-
+-
+:-moz-any(-
+--
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-) */
+@media only screen and (max-width: 320px) {
+  /* styles for devices with a minimum width of 320px */
+  section {
+    padding: 0.5em;
+  }
+
+  #nameDiv h1 {
+    margin: 5px;
+    font-size: 3em;
+    letter-spacing: 3px;
+  }
+
+  #imgDiv {
+    width: 100%;
+    height: 40%;
+  }
+  #imgBg {
+    width: 9em;
+    height: 9em;
+    border-radius: 100%;
+  }
+  #imgBg img {
+    width: 10em;
+    height: 10em;
+    top: -11px;
+    right: -10px;
+  }
+  #skillDiv {
+    height: 15%;
+    padding: 0.1em;
+  }
+  #titles ul li {
+    padding: 0em;
+    font-size: 1em;
+    text-align: center;
+  }
+
+  @-webkit-keyframes flipForTitles {
+    0%,
+    50% {
+      transform: translate(0px, -3.1em);
+    }
+    50%,
+    100% {
+      transform: translate(0px, -0.5em);
+    }
+    100%,
+    0% {
+      transform: translate(0px, -3.1em);
+    }
+  }
+
+  /* second */
+
+  #second {
+    padding: 0.2em;
+  }
+
+  #projectCard {
+    height: 40%;
+    width: 70%;
+    padding: 0.1em;
+    margin-left: 4em;
+  }
+
+  #headingDiv {
+    font-size: 0.5em;
+  }
+
+  #tools ul li {
+    padding: 0.05em;
+    font-size: 1.5em;
+  }
+  @-webkit-keyframes flipForSkills {
+    0%,
+    20% {
+      transform: translate(0px, -9em);
+    }
+    20%,
+    40% {
+      transform: translate(0px, -7em);
+    }
+    40%,
+    60% {
+      -webkit-transform: translate(0px, -5.2em);
+    }
+    60%,
+    80% {
+      transform: translate(0px, -3.2em);
+    }
+    80%,
+    100% {
+      transform: translate(0px, -1.15em);
+    }
+    100%,
+    0% {
+      transform: translate(0px, -9em);
+    }
+  }
+
+  #descriptionDiv {
+    height: 55%;
+    width: 100%;
+    padding: 0.2em;
+    margin-right: 0em;
+  }
+  #descriptionDiv p {
+    font-size: 1.1em;
+    text-align: justify;
+  }
+
+  /* Third */
+
+  #third {
+    padding: 0.2em;
+    flex-direction: column;
+  }
+
+  #messageDiv {
+    height: 50%;
+    width: 65%;
+    margin-right: 5em;
+  }
+  #messageDiv h1 {
+    font-size: 1.5em;
+    margin-right: 0.1em;
+  }
+
+  #passions ul li {
+    padding: 5px;
+    font-size: 1.5em;
+    height: 100%;
+  }
+  @-webkit-keyframes flipForPassions {
+    0%,
+    35% {
+      transform: translate(0px, -5.3em);
+    }
+    35%,
+    70% {
+      transform: translate(0px, -3em);
+    }
+    70%,
+    100% {
+      -webkit-transform: translate(0px, -1.4em);
+    }
+    100%,
+    0% {
+      transform: translate(0px, -5.3em);
+    }
+  }
+  #contactDiv {
+    height: 40%;
+    width: 50%;
+    font-size: 1em;
+    margin-left: 10em;
+  }
+}
+
+/* -------------------------------- */
+
+
+
+/* ::-webkit-meter-even-less-good-value-
+:-moz-any(-
+--
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+--
+-
+)---------------------------------------------------------------- */
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  /*style*/
+  section {
+    /* border: 2px solid red; */
+  }
+
+  /* second */
+
+  #projectCard {
+    margin-left: 10em;
+    height: 50%;
+    width: 55%;
+  }
+  #headingDiv {
+    font-size: 0.7em;
+  }
+  #headingDiv h2 {
+    margin: 2px;
+  }
+  @-webkit-keyframes flipForSkills {
+    0%,
+    20% {
+      transform: translate(0px, -12.5em);
+    }
+    20%,
+    40% {
+      transform: translate(0px, -9.55em);
+    }
+    40%,
+    60% {
+      -webkit-transform: translate(0px, -6.94em);
+    }
+    60%,
+    80% {
+      transform: translate(0px, -3.94em);
+    }
+    80%,
+    100% {
+      transform: translate(0px, -1.15em);
+    }
+    100%,
+    0% {
+      transform: translate(0px, -12.5em);
+    }
+  }
+
+  #descriptionDiv {
+    height: 40%;
+    width: 100%;
+    padding: 0.2em;
+    margin-right: 0px;
+  }
+  #descriptionDiv p {
+    font-size: 1.3em;
+    text-align: justify;
+  }
+
+  /* Third */
+
+  #messageDiv {
+    height: 60%;
+    width: 45%;
+    margin-right: 15em;
+  }
+  #messageDiv h1 {
+    font-size: 1.9em;
+  }
+  #passions {
+    justify-content: left;
+  }
+  #passions ul li {
+    text-align: left;
+  }
+  #contactDiv {
+    height: 40%;
+    width: 30%;
+    font-size: 1em;
+    margin-left: 18em;
+  }
+}
+/* ----------------------------- */
+@media screen and (min-width: 767px) {
+    /* your mobile styles here */
+    section {
+      padding: 1em;
+    }
+    #profileDiv {
+      flex-direction: column;
+      padding: 0.5em;
+      height: 75%;
+    }
+  
+    #nameDiv {
+      width: 100%;
+      height: 60%;
+      font-size: 1em;
+      padding: 0.5em;
+    }
+    #nameDiv h1 {
+      margin: 5px;
+      font-size: 4em;
+      letter-spacing: 5px;
+    }
+    #imgDiv {
+      width: 100%;
+      height: 40%;
+    }
+    #imgBg {
+      width: 11em;
+      height: 11em;
+      border-radius: 100%;
+    }
+    #imgBg img {
+      width: 12em;
+      height: 12em;
+      top: -11px;
+      right: -10px;
+    }
+    #skillDiv {
+      height: 15%;
+      padding: 0.5em;
+    }
+    #titles ul li {
+      padding: 0.1em;
+      font-size: 1.5em;
+    }
+    @-webkit-keyframes flipForTitles {
+      0%,
+      50% {
+        transform: translate(0px, -3.1em);
+      }
+      50%,
+      100% {
+        transform: translate(0px, -0.75em);
+      }
+      100%,
+      0% {
+        transform: translate(0px, -3.1em);
+      }
+    }
+  
+    /* second */
+    #second {
+      padding: 0.5em;
+    }
+    #projectDiv {
+      height: 100%;
+      flex-direction: column;
+    }
+    #projectCard {
+      height: 60%;
+      width: 35%;
+      padding: 0.5em;
+      margin-left: 29em;
+    }
+    #headingDiv {
+      font-size: 0.9em;
+    }
+    #headingDiv h2 {
+      margin: 5px;
+    }
+  
+    #tools ul li {
+      padding: 0.1em;
+      font-size: 2em;
+    }
+    @-webkit-keyframes flipForSkills {
+      0%,
+      20% {
+        transform: translate(0px, -12.5em);
+      }
+      20%,
+      40% {
+        transform: translate(0px, -9.55em);
+      }
+      40%,
+      60% {
+        -webkit-transform: translate(0px, -6.54em);
+      }
+      60%,
+      80% {
+        transform: translate(0px, -3.64em);
+      }
+      80%,
+      100% {
+        transform: translate(0px, -1.15em);
+      }
+      100%,
+      0% {
+        transform: translate(0px, -12.5em);
+      }
+    }
+    #descriptionDiv {
+      height: 40%;
+      width: 65%;
+      padding: 0.2em;
+      margin-right: 16em;
+    }
+    #descriptionDiv p {
+      font-size: 1.2em;
+      text-align: justify;
+    }
+  
+    /* Third Section */
+    #third {
+      padding: 0.5em;
+      flex-direction: column;
+    }
+    #messageDiv {
+      height: 60%;
+      width: 30%;
+      margin-right: 30em;
+    }
+    #messageDiv h1 {
+      font-size: 2.2em;
+      margin-right: 0.1em;
+    }
+    #passions ul li {
+      padding: 5px;
+      font-size: 1.9em;
+      height: 100%;
+    }
+    @-webkit-keyframes flipForPassions {
+      0%,
+      35% {
+        transform: translate(0px, -5.5em);
+      }
+      35%,
+      70% {
+        transform: translate(0px, -3.5em);
+      }
+      70%,
+      100% {
+        -webkit-transform: translate(0px, -1.74em);
+      }
+      100%,
+      0% {
+        transform: translate(0px, -5.5em);
+      }
+    }
+  
+    #contactDiv {
+      height: 40%;
+      width: 30%;
+      font-size: 1em;
+      margin-left: 28em;
+    }
+    #contactCard {
+      height: 100%;
+    }
+    #contactCard img {
+      width: 2.5em;
+      height: 2.5em;
+    }
+  }
+/* -----
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.---------------------- */
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  /* your PC & LapTops styles here */
+
+  section {
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div {
+    /* border: 2px solid var(--dark-color); */
+    width: 100%;
+  }
+
+  #profileDiv {
+    height: 65%;
+    display: flex;
+    padding: 2em;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #nameDiv {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    font-size: 2em;
+    padding: 1.5em;
+  }
+  #nameDiv h1 {
+    margin: 0.2em;
+    font-size: 2em;
+    letter-spacing: 2px;
+  }
+  #imgDiv {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #imgBg {
+    background: var(--dark-color);
+    width: 18em;
+    height: 18em;
+    border-radius: 100%;
+    position: relative;
+  }
+  #imgBg img {
+    position: absolute;
+    top: -17px;
+    right: -15px;
+    width: 20em ;
+    height: 20em ;
+  }
+  #skillDiv {
+    height: 25%;
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #titles {
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+  }
+  #titles ul {
+    height: 100%;
+    text-transform: uppercase;
+    animation: flipForTitles 5s ease-in-out infinite;
+  }
+  #titles ul li {
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0.3em;
+    height: 100%;
+    font-size: 2.3em;
+  }
+  @-webkit-keyframes flipForTitles {
+    0%,
+    50% {
+      transform: translate(0px, -4.9em);
+    }
+    50%,
+    100% {
+      transform: translate(0px, -1.375em);
+    }
+    100%,
+    0% {
+      transform: translate(0px, -4.9em);
+    }
+  }
+  /* second section */
+
+  #second {
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+  }
+  #projectDiv {
+    height: 75%;
+    box-sizing: border-box;
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #projectCard {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.2em;
+  }
+
+  #projectCard div {
+    width: 100%;
+  }
+  #headingDiv {
+    height: 35%;
+    font-size: 1.2em;
+  }
+  #headingDiv h2 {
+    margin: 0.1em;
+  }
+  #toolsDiv {
+    height: 35%;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #tools {
+    width: 100%;
+    height: 62%;
+    overflow: hidden;
+  }
+  #tools ul {
+    height: 100%;
+    text-transform: uppercase;
+    animation: flipForSkills 5s ease-in-out infinite;
+  }
+  #tools ul li {
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0.1em;
+    font-size: 2.5em;
+  }
+  @-webkit-keyframes flipForSkills {
+    0%,
+    20% {
+      transform: translate(0px, -15.1em);
+    }
+    20%,
+    40% {
+      transform: translate(0px, -10.55em);
+    }
+    40%,
+    60% {
+      -webkit-transform: translate(0px, -7.54em);
+    }
+    60%,
+    80% {
+      transform: translate(0px, -3.64em);
+    }
+    80%,
+    100% {
+      transform: translate(0px, -0.315em);
+    }
+    100%,
+    0% {
+      transform: translate(0px, -15.1em);
+    }
+  }
+
+  #linksDiv {
+    height: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #linksDiv a {
+    text-decoration: none;
+    width: 10%;
+    height: 40%;
+  }
+  #linksDiv img {
+    width: 100%;
+    height: 100%;
+  }
+  #contactCard img:hover {
+    cursor: pointer;
+  }
+  #descriptionDiv {
+    height: 100%;
+    width: 65%;
+    padding: 1.5em;
+  }
+  #descriptionDiv p {
+    font-size: 2em;
+    text-align: justify;
+  }
+
+  /* Third Section */
+  #third {
+    padding: 1em;
+    flex-direction: row;
+  }
+  #messageDiv {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 2px;
+    height: 100%;
+    width: 65%;
+    justify-content: center;
+  }
+  #messageDiv h1 {
+    font-size: 4em;
+    margin: 0.2em;
+  }
+  #passions {
+    width: 100%;
+    height: 10%;
+    overflow: hidden;
+  }
+  #passions ul {
+    height: 100%;
+    animation: flipForPassions 5s ease-in-out infinite;
+  }
+  #passions ul li {
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0.1em;
+    font-size: 3.3em;
+    height: 100%;
+  }
+  @-webkit-keyframes flipForPassions {
+    0%,
+    35% {
+      transform: translate(0px, -7.9em);
+    }
+    35%,
+    70% {
+      transform: translate(0px, -4.95em);
+    }
+    70%,
+    100% {
+      -webkit-transform: translate(0px, -1.74em);
+    }
+    100%,
+    0% {
+      transform: translate(0px, -7.9em);
+    }
+  }
+  #contactDiv {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    text-align: center;
+  }
+  #contactCard {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30%;
+  }
+  #contactCard img {
+    width: 2em;
+    height: 2em;
+  }
+  #contactCard img:hover {
+    cursor: pointer;
+  }
+}
