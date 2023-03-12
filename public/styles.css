@@ -448,6 +448,7 @@ body{
     /* Your styles for screens up to 320px here */
 
     section{
+      border: 3px solid green;
         padding: 1em;
     }
 
@@ -718,7 +719,7 @@ THIRD SECTION  --320
   
 
 section{
-  /* border: 1px solid red; */
+  border: 2px solid red;
         padding: 1em;
     }
 
@@ -988,7 +989,7 @@ THIRD SECTION ---320px -480px
     /* Styles for devices with a minimum width of 481px and a maximum width of 767px */
 
     section{
-      /* border: 1px solid blue; */
+      border: 1px solid blue;
             padding: 1em;
         }
     
