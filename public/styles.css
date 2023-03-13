@@ -742,7 +742,7 @@ section{
     . */
 
     #profileDiv {
-      border: 1px solid red;
+      /* border: 1px solid red; */
         height: 75%;
         flex-direction: column;
         justify-content: space-between;
